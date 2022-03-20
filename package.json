@@ -1,0 +1,14 @@
+{
+  "name": "campflambeauwebserver",
+  "version": "1.0.0",
+  "description": "Web server designed for camp flambeau web app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JeffDziad",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
