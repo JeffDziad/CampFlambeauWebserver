@@ -2,11 +2,16 @@ const express = require('express');
 const https = require('https');
 const http = require('http');
 const fs = require('fs');
+const history = require('connect-history-api-fallback');
 const app = express();
 const HTTP_PORT = 80;
 const HTTPS_PORT = 443;
 
 const staticFileMiddleware = express.static(__dirname + '/www/dist/');
+app.use(history({
+    disableDotRule: true,
+    verbose: true
+}));
 app.use(staticFileMiddleware);
 app.use(express.json());
 app.use(express.urlencoded());
