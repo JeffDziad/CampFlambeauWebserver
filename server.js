@@ -8,10 +8,6 @@ const HTTP_PORT = 80;
 const HTTPS_PORT = 443;
 
 const staticFileMiddleware = express.static(__dirname + '/www/dist/');
-app.use(history({
-    disableDotRule: true,
-    verbose: true
-}));
 app.use(staticFileMiddleware);
 app.use(express.json());
 app.use(express.urlencoded());
