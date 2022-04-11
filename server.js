@@ -14,11 +14,11 @@ app.use(staticFileMiddleware);
 app.use(express.json());
 app.use(express.urlencoded());
 
-router.get('/hello', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('Howdy!');
 });
 
-router.post('/submit/inquiry', (req, res) => {
+app.post('/submit/inquiry', (req, res) => {
     let success = false;
     console.log(req.body);
     res.send({success: success})
