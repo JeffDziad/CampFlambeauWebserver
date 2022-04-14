@@ -34,7 +34,7 @@ app.post('/submit/inquiry', async (req, res) => {
             from: 'campflambeau@gmail.com',
             to: 'campflambeau@gmail.com',
             subject: 'CAMP FLAMBEAU INQUIRY SUBMISSION',
-            text: `Start Date: ${form_data.startDate}, End Date: ${form_data.endDate} | Start Message | ${form_data.message} | Submitted by: ${form_data.name} (${form_data.email})`,
+            text: `Start Date: ${form_data.startDate}, End Date: ${form_data.endDate} | Start Message | ${form_data.message} | Submitted by: ${form_data.name} (${form_data.email}) | REPLY USING CUSTOMERS EMAIL`,
         });
     } catch (e) {
         console.log(e);
